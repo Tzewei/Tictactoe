@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<style>
+
+.box{
+  display: inline-block;
+  margin: 5px;
+  border: 1px red solid;
+  width:200px;
+  height:160px;
+}
+
+.box:hover{
+  background-color: pink;
+}
+
+
+/*.box11{
+  width: 100px;height: 100px;
+  border: red 1px solid;
+}*/
+
+.box11 .box22{
+  width: 50px;height: 50px;
+  border: blue 1px solid;
+}
+
+
+
+</style>
+
+<body>
+
+  <div class ="box11">a
+    <div class="box22" id="boxb" onmousedown="mouseDown()">b</div>
+    <div class="box22" id="boxc">c</div>
+
+  </div>
+
+  <button id="myBtn">Try it</button>
+  <p id="demo"></p>
+  <p id="test" onclick="myFunction()">Click me to change my HTML content (innerHTML).</p>
+
+  <div class="box" id="box1">Box1</div>
+  <div class="box" id="box2">Box2</div>
+
+
+  <script>
+
+  document.getElementById("myBtn").addEventListener("click", displayDate);
+
+  function displayDate() {
+      document.getElementById("demo").innerHTML = Date();
+  }
+
+  function myFunction() {
+      document.getElementById("test").innerHTML = "Paragraph changed!";
+  }
+
+  document.getElementById("box1").addEventListener("click", function(){alert("hello");});
+
+  function mouseDown(){
+    alert("mousedown");
+  }
+
+  </script>
+</body>
+</html>
+
+
+<!--
+}*/
+
+
+-->
