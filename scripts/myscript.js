@@ -6,10 +6,10 @@ var boxState = [
     [8, 9, 10]
 ];
 var playerTurn = 0; //Player 1 = 0 = o, Player2 = 1 = x
-var gameCount = 9;
+var gameCount = 8;
 var winner;
 var boxPtr;
-var sign = -1;
+var sign = -1; // X or O or -1 is not selected
 
 initialize();
 
@@ -26,9 +26,9 @@ function changeBox(sign, choice) {
 
     if (sign == 1) {
         console.log("sign here is 1");
-        pointer.innerText =  "X";
+        pointer.innerHTML = "<p>X</p>";
     } else {
-        pointer.innerText =  "O";
+        pointer.innerHTML = "<p>O</p>";
     }
 }
 

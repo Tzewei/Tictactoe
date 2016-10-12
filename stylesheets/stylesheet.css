@@ -60,14 +60,12 @@
   background-color: white;
   width:200px;
   height:160px;
-  font-size: 80px;
+  font-size: 60px;
   text-align: center;
-  padding-top: 8px;
-
 }
 
 .box:hover{
-background-color: pink;
+  background-color: pink;
 }
 
 
